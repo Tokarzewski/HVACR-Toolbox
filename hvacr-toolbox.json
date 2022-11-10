@@ -1,0 +1,39 @@
+{
+    "schemas": {
+        "HVACR components":["gbXML", "IDF", "osm"],
+        "piping":{"ifc":"https://technical.buildingsmart.org/standards/ifc/"},
+        "ducting":{"ifc":"https://technical.buildingsmart.org/standards/ifc/"},
+        "controls":{"Bricks":"https://brickschema.org/",
+                    "Haystack": "https://project-haystack.org/"}
+    },
+    "calcs":{
+        "sizing zone heating and cooling loads": ["EnergyPlus", "OpenStudio", "Ladybug tools"],
+        "sizing HVACR components": {"EnergyPlus":"https://energyplus.net/",
+                                    "OpenStudio":"https://openstudio.net/", 
+                                    "Ladybug tools":"https://www.ladybug.tools/",
+                                    "ht":"https://github.com/CalebBell/ht"
+        },                                                        
+        "duct pressure drop calculation": [],
+        "sizing duct dimmensions": [],
+        "duct acoustic calculations": [],
+        "pipe pressure drops calculation": {"fluids":"https://github.com/CalebBell/fluids"},
+        "sizing pipe dimmensions": [],
+        "hydronic balancing":{"Modelica - Buildings":"https://github.com/lbl-srg/modelica-buildings"},
+        "air quality analysis":{"CONTAM": "https://www.nist.gov/services-resources/software/contam"},
+        "thermal comfort":{"pythermalcomfort":"https://github.com/CenterForTheBuiltEnvironment/pythermalcomfort"},
+        "computer fluid dynamics": {"OpenFoam": "https://www.openfoam.com/"}
+    },
+    "databases":{
+        "fluid properties": {"Psychrolib":"https://github.com/psychrometrics/psychrolib",
+                             "CoolProp":"http://www.coolprop.org/"},
+        "duct fittings": [],
+        "pipe fittings": [],
+        "valves": [],
+        "components": [],
+        "weather files": {"Climate.OneBuilding":"https://climate.onebuilding.org/"}
+    },
+    "diagrams":{
+        "fluid property diagrams": {"fluprodia":"https://github.com/fwitte/fluprodia"},
+        "connection diagrams": {"pyflowsheet":"https://github.com/Nukleon84/pyflowsheet"}
+    }
+}
