@@ -1,3 +1,3 @@
 # HVACR-Toolbox
 
-Digital toolbox for HVACR design.
+Repository with references to the digital tools for HVACR design.
