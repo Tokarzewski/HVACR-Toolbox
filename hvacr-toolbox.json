@@ -1,8 +1,8 @@
 {
     "schemas": {
         "HVACR components":["gbXML", "IDF", "osm"],
-        "piping":{"ifc":"https://technical.buildingsmart.org/standards/ifc/"},
-        "ducting":{"ifc":"https://technical.buildingsmart.org/standards/ifc/"},
+        "pipework":{"ifc":"https://github.com/IfcOpenShell/IfcOpenShell"},
+        "ductwork":{"ifc":"https://github.com/IfcOpenShell/IfcOpenShell"},
         "controls":{"Bricks":"https://brickschema.org/",
                     "Haystack": "https://project-haystack.org/"}
     },
