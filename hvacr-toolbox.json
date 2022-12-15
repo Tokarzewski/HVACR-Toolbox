@@ -20,7 +20,8 @@
         "sizing pipe dimmensions": [],
         "hydronic balancing":{"Modelica - Buildings":"https://github.com/lbl-srg/modelica-buildings"},
         "air quality analysis":{"CONTAM": "https://www.nist.gov/services-resources/software/contam"},
-        "thermal comfort":{"pythermalcomfort":"https://github.com/CenterForTheBuiltEnvironment/pythermalcomfort"},
+        "thermal comfort":{"pythermalcomfort":"https://github.com/CenterForTheBuiltEnvironment/pythermalcomfort",
+                            "accim": "https://github.com/dsanchez-garcia/accim"},
         "computer fluid dynamics": {"OpenFoam": "https://www.openfoam.com/"}
     },
     "databases":{
