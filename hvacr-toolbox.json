@@ -1,18 +1,22 @@
 {
     "schemas": {
-        "HVACR components":["gbXML", "IDF", "osm"],
+        "energy models":["gbXML", "idf", "osm", "hbjson"],
         "pipework":{"ifc":"https://github.com/IfcOpenShell/IfcOpenShell"},
         "ductwork":{"ifc":"https://github.com/IfcOpenShell/IfcOpenShell"},
         "controls":{"Bricks":"https://brickschema.org/",
                     "Haystack": "https://project-haystack.org/"}
     },
     "calcs":{
-        "sizing zone heating and cooling loads": ["EnergyPlus", "OpenStudio", "Ladybug tools"],
+        "heating and cooling loads": {"EnergyPlus":"https://energyplus.net/",
+                                      "OpenStudio":"https://openstudio.net/", 
+                                      "Ladybug tools":"https://www.ladybug.tools/",
+                                      "eppy":"https://github.com/santoshphilip/eppy"
+                                     },
         "sizing HVACR components": {"EnergyPlus":"https://energyplus.net/",
                                     "OpenStudio":"https://openstudio.net/", 
                                     "Ladybug tools":"https://www.ladybug.tools/",
                                     "ht":"https://github.com/CalebBell/ht"
-        },                                                        
+                                   },                                             
         "duct pressure drop calculation": [],
         "sizing duct dimmensions": [],
         "duct acoustic calculations": [],
@@ -21,20 +25,27 @@
         "hydronic balancing":{"Modelica - Buildings":"https://github.com/lbl-srg/modelica-buildings"},
         "air quality analysis":{"CONTAM": "https://www.nist.gov/services-resources/software/contam"},
         "thermal comfort":{"pythermalcomfort":"https://github.com/CenterForTheBuiltEnvironment/pythermalcomfort",
-                            "accim": "https://github.com/dsanchez-garcia/accim"},
-        "computer fluid dynamics": {"OpenFoam": "https://www.openfoam.com/"}
+                            "accim": "https://github.com/dsanchez-garcia/accim"
+                          },
+        "computer fluid dynamics": {"OpenFoam": "https://www.openfoam.com/"},
+        "water distribution systems": {"EPANET": "https://www.epa.gov/water-research/epanet"}
     },
     "databases":{
         "fluid properties": {"Psychrolib":"https://github.com/psychrometrics/psychrolib",
-                             "CoolProp":"http://www.coolprop.org/"},
+                             "CoolProp":"http://www.coolprop.org/"
+                            },
         "duct fittings": [],
         "pipe fittings": [],
         "valves": [],
-        "components": [],
+        "components": {"heat pumps": "https://github.com/FZJ-IEK3-VSA/hplib/tree/main"},
         "weather files": {"Climate.OneBuilding":"https://climate.onebuilding.org/"}
     },
     "diagrams":{
-        "fluid property diagrams": {"fluprodia":"https://github.com/fwitte/fluprodia"},
+        "fluid property diagrams": {"fluprodia":"https://github.com/fwitte/fluprodia",
+                                    "psychrochart":"https://github.com/azogue/psychrochart"},
         "connection diagrams": {"pyflowsheet":"https://github.com/Nukleon84/pyflowsheet"}
-    }
+    },
+    "CAD": {"FreeCAD": "https://www.freecad.org/"},
+    "BIM": {"BlenderBIM": "https://blenderbim.org/",
+            "IfcOpenShell": "https://ifcopenshell.org/"}
 }
